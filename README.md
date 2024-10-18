@@ -8,8 +8,8 @@ The following assumptions have been made while developing this program:
 
   1. Supported Log Format: The program only supports the version 2 log format. The 6th field contains the dstport, and the 7th field contains the protocol.
   2. Plain Text Files: The log, protocol mapping, and lookup files are expected to be plain text ASCII files.
-      a. The lookup table file should contain exactly 3 comma-separated columns: dstport, protocol, and tag. Rows with fewer or more than 3 columns will be skipped.
-      b. The protocol numbers file should contain at least 2 comma-separated columns: port_number and protocol_name. Rows with fewer than 2 columns will be skipped.
+        The lookup table file should contain exactly 3 comma-separated columns: dstport, protocol, and tag. Rows with fewer or more than 3 columns will be skipped.
+        The protocol numbers file should contain at least 2 comma-separated columns: port_number and protocol_name. Rows with fewer than 2 columns will be skipped.
   3.Handling Invalid Entries: If any log entry contains a '-' symbol in the dstport or protocol fields, it is considered invalid and will be skipped. The program will print an informative message when this occurs.
 
 
